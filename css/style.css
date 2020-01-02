@@ -34,6 +34,12 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 img {
@@ -51,6 +57,19 @@ img {
 .flex-item {
   flex: 1;
 	margin: 0 10px;
+}
+
+.btn {
+  align-self: center;
+  text-align: center;
+  border: 1px solid #C35E1E;
+  border-radius: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: #C35E1E;
+  padding: 15px;
+  font-size: 18px;
+  color: #F8F7F2;
 }
 
 /* MENU */
@@ -100,11 +119,13 @@ img {
   margin-top: 0px;
   background: url(../assets/background/curves.svg) no-repeat center center;
   padding: 160px 0;
+  margin-bottom: 60px;
 }
 
 .about img {
-  flex-grow: 0;
   max-width: 375px;
+  max-height: 375px;
+  align-self: center;
 }
 
 .about-content {
@@ -113,24 +134,56 @@ img {
   flex-direction: column;
 }
 
-.about-content h2 {
-  margin-bottom: 15px;
-}
-
 .about-content p {
   margin-bottom: 20px;
 }
 
-.btn {
-  align-self: center;
-  text-align: center;
-  border: 1px solid #C35E1E;
+/* PSICO */
+
+.psico {
+  margin-bottom: 60px;
+}
+
+.psico-content {
+  flex-direction: column;
+}
+
+.psico-content p {
+  padding-right: 70px;
+  margin-bottom: 20px;
+}
+
+/* BLOG */
+
+.blog {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog > p {
+  margin-bottom: 20px;
+}
+
+.posts {
+  margin-bottom: 45px;
+}
+
+.blog-post {
+  background-color: #CBAC95;
+  box-shadow: #222; 
+}
+
+.blog-post, .blog-post img {
+  border: 1px transparent;
   border-radius: 12px;
-  width: 200px;
-  height: 50px;
-  background-color: #C35E1E;
-  padding: 15px;
-  font-size: 18px;
-  color: #F8F7F2;
-  /* text-transform: uppercase; */
+}
+
+.blog-post-info {
+  padding: 20px;
+}
+
+.blog-post-info p {
+  font-size: 12px;
+  margin-top: 10px;
 }
