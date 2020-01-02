@@ -9,40 +9,48 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="container">
-    <div>
-      <img src="assets/icons/logo_horizontal.png" alt="Vanessa Mattos">
+  <header class="menu">
+    <div class="container">
+      <a href="#" class="flex-item"><img src="assets/icons/logo_horizontal.png" alt="Vanessa Mattos"></a>
+      
+      <nav class="menu-nav flex-item">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Sistêmica</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Sistêmica</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-  </nav>
+  </header>
 
-  <section class="container">
-    <h1>Uma frase bem bonita aqui que representa algo bacana e a mensagem....</h1>
-    <div>
-      <img src="assets/img/homepage.svg" alt="Ilustração de uma mulher segurando uma lâmpada">
+
+  <main class="intro">
+    <div class="container">
+      <h1 class="flex-item">Uma frase bem bonita aqui que representa algo bacana e a mensagem</h1>
+      <div class="flex-item">
+        <img src="assets/img/homepage.svg" alt="Ilustração de uma mulher segurando uma lâmpada">
+      </div>
     </div>
-  </section>
+  </main>
 
   <section class="about">
     <div class="container">
-      <div>
-        <img src="assets/img/profile-photo.png" alt="Foto profissional da Psicóloga Vanessa Mattos">
-      </div>
+      <img src="assets/img/profile-photo.png" class="flex-item" alt="Foto profissional da Psicóloga Vanessa Mattos"/>
       
-      <div>
+      <div class="about-content flex-item container">
         <h2>Titulo Legal</h2>
         <p>
           Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hen drerit nisi non malesuada nisi. 
-          Paisis, filhis, espiritis santis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. A ordem dos tratores não altera o pão duris.        
-          Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hen drerit nisi non malesuada nisi aesent volutpat erat h malesuada volutp.
         </p>
-        <a href="#"><button>Sobre</button></a>
+        <p>
+          Paisis, filhis, espiritis santis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. A ordem dos tratores não altera o pão duris.     
+        </p>    
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hen drerit nisi non malesuada nisi aesent volutpat erat h malesuada volutp.
+        </p>  
+        <a href="#" class="btn">Conhecer mais</a>
       </div> 
     </div>
   </section>
