@@ -133,7 +133,7 @@ hr {
   align-self: center;
 }
 
-.illustration {
+.align-center {
   align-self: center;
 }
 
@@ -198,6 +198,11 @@ hr {
 
 .intro {
   margin-top: 30px;
+}
+
+.intro h1 {
+  align-self: center;
+  text-align: center;
 }
 
 /* QUOTE */
