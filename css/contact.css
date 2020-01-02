@@ -1,0 +1,12 @@
+.contact-info a {
+  font-size: 18px;
+}
+
+.contact-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-social h3 {
+  margin-top: 20px;
+}

@@ -84,6 +84,7 @@ h2 {
 h3 {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 img {
@@ -233,26 +234,36 @@ hr {
   color: #f8f7f2;
 }
 
-.footer h3 {
-  margin-bottom: 15px;
-}
-
 .footer ul li {
   margin-bottom: 7px;
 }
 
-.contact ul li a img {
-  display: inline;
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact a {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.contact a img {
+  align-self: center;
   margin-left: 10px;
 }
 
-.social ul {
+.icons {
   display: flex;
-  margin-left: 40px;
 }
 
-.social ul li {
-  padding-right: 35px;
+.icons a {
+  padding: 0 10px 10px 10px;
+}
+
+.icons a:first-child {
+  margin-right: 25px;
 }
 
 /* COPYRIGHT */
