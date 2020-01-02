@@ -121,6 +121,10 @@ img {
   padding: 15px;
 }
 
+.menu-logo {
+  margin: 0 10px;
+}
+
 .menu-nav {
   align-self: center;
 }
