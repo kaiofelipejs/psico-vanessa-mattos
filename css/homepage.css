@@ -1,56 +1,11 @@
-.intro h1,
-.intro img {
-  align-self: center;
-}
-
 .intro h1 {
-  text-align: center;
-}
-
-/* ABOUT */
-
-.about {
-  margin-top: 0px;
-  background: url(../assets/background/curves.svg) no-repeat center center;
-  padding: 160px 0;
-  margin-bottom: 60px;
-}
-
-.about img {
-  max-width: 375px;
-  max-height: 375px;
   align-self: center;
-}
-
-.about-content {
-  justify-content: right;
-  margin-left: 100px;
-  flex-direction: column;
-}
-
-.about-content p {
-  margin-bottom: 20px;
-}
-
-/* PSICO */
-
-.psico {
-  margin-bottom: 60px;
-}
-
-.psico-content {
-  flex-direction: column;
-}
-
-.psico-content p {
-  padding-right: 70px;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* BLOG */
 
 .blog {
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -75,10 +30,5 @@
 }
 
 .blog-post-info {
-  padding: 20px;
-}
-
-.blog-post-info p {
-  font-size: 12px;
-  margin-top: 10px;
+  padding: 20px 20px 30px 20px;
 }

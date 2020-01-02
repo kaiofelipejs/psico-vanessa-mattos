@@ -92,6 +92,17 @@ img {
   margin: 0;
 }
 
+section.container,
+section.bg-curves,
+.intro {
+  margin-bottom: 60px;
+}
+
+hr {
+  border: 0.5px solid #cbac95;
+  margin-bottom: 20px;
+}
+
 .container {
   display: flex;
   max-width: 970px;
@@ -114,6 +125,44 @@ img {
   padding: 15px;
   font-size: 18px;
   color: #f8f7f2;
+}
+
+.profile-photo {
+  max-width: 375px;
+  max-height: 375px;
+  align-self: center;
+}
+
+.illustration {
+  align-self: center;
+}
+
+.bg-curves {
+  background: url(../assets/background/curves.svg) no-repeat center center;
+  background-size: cover;
+  padding: 160px 0;
+}
+
+.content-left {
+  justify-content: left;
+  padding-right: 70px;
+  flex-direction: column;
+}
+
+.content-right {
+  justify-content: right;
+  margin-left: 100px;
+  flex-direction: column;
+}
+
+.content-left p,
+.content-right p {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 12px;
+  margin-top: 8px;
 }
 
 /* MENU */
@@ -147,14 +196,12 @@ img {
 
 .intro {
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 
 /* QUOTE */
 
 .quote {
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .quote blockquote {
