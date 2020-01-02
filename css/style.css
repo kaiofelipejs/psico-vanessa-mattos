@@ -144,12 +144,14 @@ hr {
 }
 
 .content-left {
+  display: flex;
   justify-content: left;
   padding-right: 70px;
   flex-direction: column;
 }
 
 .content-right {
+  display: flex;
   justify-content: right;
   margin-left: 100px;
   flex-direction: column;
@@ -167,7 +169,7 @@ hr {
 
 /* MENU */
 .menu {
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .menu-logo {

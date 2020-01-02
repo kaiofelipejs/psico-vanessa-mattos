@@ -1,0 +1,25 @@
+.assumption {
+  align-items: center;
+}
+
+.assumption.bg-curves {
+  padding-top: 120px;
+}
+.assumption h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.assumption-item,
+.assumption-item img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.assumption-item img {
+  margin-bottom: 20px;
+}
+
+.assumption-item h3 {
+  margin-bottom: 10px;
+}
