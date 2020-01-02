@@ -78,8 +78,6 @@ img {
 }
 
 .menu-nav {
-	flex: 1;
-	margin: 0 10px;
 	align-self: center;
 }
 
@@ -91,7 +89,6 @@ img {
 .menu-nav ul {
 	float: right;
 	display: flex;
-	list-style: none;
 }
 
 .menu-nav ul li a {
@@ -186,4 +183,72 @@ img {
 .blog-post-info p {
   font-size: 12px;
   margin-top: 10px;
+}
+
+/* QUOTE */
+
+.quote {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.quote blockquote {
+  margin: 0 auto;
+}
+
+.quote blockquote p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quote blockquote cite {
+  font-size: 18px;
+  float: right;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #1D454D;
+  padding: 30px;
+  color: #F8F7F2;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer ul li {
+  margin-bottom: 7px;
+}
+
+.contact ul li a img {
+  display: inline;
+  margin-left: 10px;
+}
+
+.social ul {
+  display: flex;
+  margin-left: 40px;
+}
+
+.social ul li {
+  padding-right: 35px;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+  background-color: #222;
+  padding: 20px;
+  color: #F8F7F2;
+}
+
+.copyright p {
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.copyright p a:hover {
+  text-decoration: underline;
 }
