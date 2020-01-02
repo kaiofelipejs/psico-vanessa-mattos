@@ -2,24 +2,67 @@
 
 *,
 *::before,
-*::after {margin: 0; padding: 0; box-sizing:border-box;}
-a {text-decoration:none; color:inherit; cursor:pointer;}
-button {background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
-figure {margin:0;}
-input::-moz-focus-inner {border:0; padding:0; margin:0;}
-ul, ol, dd {margin:0; padding:0; list-style:none;}
-h1, h2, h3, h4, h5, h6 {margin:0; font-size:inherit; font-weight:inherit;}
-p {margin:0;}
-cite {font-style:normal;}
-fieldset {border-width:0; padding:0; margin:0;}
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
 
 /* DEFAULT */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
-  background-color: #F8F7F2;
-  font-family: 'Poppins', sans-serif;
+  background-color: #f8f7f2;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -51,25 +94,25 @@ img {
 .container {
   display: flex;
   max-width: 970px;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .flex-item {
   flex: 1;
-	margin: 0 10px;
+  margin: 0 10px;
 }
 
 .btn {
   align-self: center;
   text-align: center;
-  border: 1px solid #C35E1E;
+  border: 1px solid #c35e1e;
   border-radius: 12px;
   width: 200px;
   height: 50px;
-  background-color: #C35E1E;
+  background-color: #c35e1e;
   padding: 15px;
   font-size: 18px;
-  color: #F8F7F2;
+  color: #f8f7f2;
 }
 
 /* MENU */
@@ -78,21 +121,21 @@ img {
 }
 
 .menu-nav {
-	align-self: center;
+  align-self: center;
 }
 
 .menu-nav a {
   text-transform: uppercase;
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .menu-nav ul {
-	float: right;
-	display: flex;
+  float: right;
+  display: flex;
 }
 
 .menu-nav ul li a {
-	padding: 15px;
+  padding: 15px;
 }
 
 /* INTRO */
@@ -102,7 +145,8 @@ img {
   margin-bottom: 60px;
 }
 
-.intro h1, .intro img {
+.intro h1,
+.intro img {
   align-self: center;
 }
 
@@ -167,11 +211,12 @@ img {
 }
 
 .blog-post {
-  background-color: #CBAC95;
-  box-shadow: #222; 
+  background-color: #cbac95;
+  box-shadow: #222;
 }
 
-.blog-post, .blog-post img {
+.blog-post,
+.blog-post img {
   border: 1px transparent;
   border-radius: 12px;
 }
@@ -209,9 +254,9 @@ img {
 /* FOOTER */
 
 .footer {
-  background-color: #1D454D;
+  background-color: #1d454d;
   padding: 30px;
-  color: #F8F7F2;
+  color: #f8f7f2;
 }
 
 .footer h3 {
@@ -241,7 +286,7 @@ img {
 .copyright {
   background-color: #222;
   padding: 20px;
-  color: #F8F7F2;
+  color: #f8f7f2;
 }
 
 .copyright p {
