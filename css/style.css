@@ -184,6 +184,14 @@ hr {
 .menu-nav a {
   text-transform: uppercase;
   font-size: 18px;
+  /* transition: 0.3s ease; */
+}
+
+.menu-nav a:hover {
+  /* border-top: 4px solid #c35e1e;
+  border-bottom: 4px solid #c35e1e;
+  padding-top: 6px;
+  padding-bottom: 6px; */
 }
 
 .menu-nav ul {
@@ -193,6 +201,29 @@ hr {
 
 .menu-nav ul li a {
   padding: 15px;
+  position: relative;
+}
+
+.menu-nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #cbac95;
+  height: 1px;
+}
+
+.menu-nav ul li a::after,
+.menu-nav ul li a::before {
+  transition: all 0.5s;
+}
+
+.menu-nav ul li a:hover:after {
+  width: 100%;
 }
 
 /* INTRO */
@@ -238,20 +269,42 @@ hr {
   margin-bottom: 7px;
 }
 
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.sitemap,
+.contact,
 .social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.contact {
+  border-left: 1px solid rgb(248, 247, 242, 0.25);
+  border-right: 1px solid rgb(248, 247, 242, 0.25);
+}
+
+.contact h3,
+.contact ul li {
+  text-align: center;
 }
 
 .contact a {
   display: flex;
   margin-bottom: 7px;
+  justify-content: center;
 }
 
 .contact a img {
   align-self: center;
   margin-left: 10px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icons {
