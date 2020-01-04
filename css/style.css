@@ -270,6 +270,10 @@ section.bg-curves,
   .menu-nav {
     display: none;
   }
+
+  .menu-logo {
+    max-width: 50%;
+  }
 }
 
 /* INTRO */
