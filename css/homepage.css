@@ -1,0 +1,37 @@
+.blog-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-home > p {
+  margin-bottom: 20px;
+}
+
+.posts-home {
+  margin-bottom: 45px;
+}
+
+@media (max-width: 739px) {
+  .blog-post-home {
+    margin: 0;
+  }
+
+  .blog-post-home:nth-child(2) {
+    margin: 20px 0;
+  }
+}
+
+.blog-post-home {
+  background-color: #cbac95;
+  box-shadow: #222;
+}
+
+.blog-post-home,
+.blog-post-home img {
+  border: 1px transparent;
+  border-radius: 12px;
+}
+
+.blog-post-info-home {
+  padding: 20px 20px 30px 20px;
+}
