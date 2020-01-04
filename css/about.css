@@ -1,3 +1,10 @@
 .publication-info {
   margin-top: -10px;
 }
+
+@media (max-width: 739px) {
+  .focus img,
+  .publications img {
+    display: none;
+  }
+}

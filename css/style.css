@@ -102,13 +102,18 @@ img {
 
 section.container,
 section.bg-curves,
-.intro {
+.intro,
+.intro-page {
   margin-bottom: 60px;
 }
 
-hr {
+.publication hr {
   border: 0.5px solid #cbac95;
   margin-bottom: 20px;
+}
+
+.publication:last-child hr:last-child {
+  margin-bottom: 0px;
 }
 
 .container {
@@ -261,8 +266,15 @@ hr {
   width: 100%;
 }
 
+@media (max-width: 739px) {
+  .menu-nav {
+    display: none;
+  }
+}
+
 /* INTRO */
-.intro {
+.intro,
+.intro-page {
   margin-top: 30px;
 }
 
@@ -380,8 +392,8 @@ hr {
 
   .footer ul {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer ul li {
