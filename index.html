@@ -12,13 +12,16 @@
   </head>
   <body>
     <header class="menu">
-      <div class="container">
+      <div class="container" id="menu-header">
         <a href="#" class="menu-logo">
           <img src="assets/icons/logo_horizontal.png" alt="Vanessa Mattos" />
         </a>
 
         <nav class="menu-nav flex-item">
-          <ul>
+          <button data-menu="button" aria-expanded="false" aria-controls="menu">
+            <span>Menu</span>
+          </button>
+          <ul data-menu="list" id="menu" class="menu-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Sobre</a></li>
             <li><a href="specialty.html">Especialidade</a></li>
@@ -229,5 +232,6 @@
         </ul>
       </div>
     </section>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
