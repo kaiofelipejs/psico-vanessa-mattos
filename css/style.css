@@ -125,7 +125,7 @@ section.bg-curves,
 @media (max-width: 739px) {
   .container {
     flex-direction: column;
-    max-width: 320px;
+    max-width: 300px;
   }
 
   .flex-item {
@@ -228,24 +228,23 @@ section.bg-curves,
 
 .menu-logo {
   margin: 0 10px;
-  background: url(../assets/icons/logo_horizontal.png) no-repeat center center;
-  background-size: cover;
-  width: 297px;
-  height: 125px;
   transition: 0.4s;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 739px) {
   .menu-logo {
-    width: 250px;
-    height: 110px;
-    margin-left: -40px;
+    width: 70%;
+    height: 70%;
+  }
+  div.menu {
+    top: 25px;
   }
 }
 
 .menu {
   top: 40px;
-  right: 15%;
   background: #c35e1e;
   border-radius: 50%;
   box-shadow: 0 0 0 0 #c35e1e, 0 0 0 0 #c35e1e;
@@ -312,7 +311,7 @@ input:checked ~ ul {
 
 .menu-list {
   position: absolute;
-  top: 200%;
+  top: 250%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
