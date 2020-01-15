@@ -5,9 +5,17 @@
 .assumption.bg-curves {
   padding-top: 120px;
 }
+
+@media (max-width: 739px) {
+  .assumption.bg-curves {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
 .assumption h2 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .assumption-item,
@@ -22,4 +30,13 @@
 
 .assumption-item h3 {
   margin-bottom: 10px;
+}
+
+@media (max-width: 739px) {
+  .assumption-item {
+    margin-bottom: 30px;
+  }
+  .practice img {
+    display: none;
+  }
 }
