@@ -217,11 +217,21 @@ section.bg-curves,
 
 /* MENU */
 .menu {
-  padding: 15px 0;
+  top: 0;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  background: #f8f7f2;
 }
 
 .menu-logo {
   margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+  .menu-logo {
+    width: 150px;
+  }
 }
 
 .menu-nav {
@@ -269,7 +279,7 @@ section.bg-curves,
 /* INTRO */
 .intro,
 .intro-page {
-  margin-top: 30px;
+  margin-top: 170px;
 }
 
 .intro h1 {
