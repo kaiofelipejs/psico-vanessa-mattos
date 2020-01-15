@@ -1,14 +1,15 @@
 .blog {
   display: flex;
   flex-direction: column;
+  margin-bottom: -10px;
 }
 
-.blog > p {
+/* .blog > p {
   margin-bottom: 20px;
-}
+} */
 
 .posts {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .blog-post {
@@ -28,4 +29,14 @@
 
 .btn-next-page {
   align-self: flex-end;
+}
+
+@media (max-width: 739px) {
+  .blog-post {
+    margin-bottom: 30px;
+  }
+
+  .posts {
+    margin-bottom: 25px;
+  }
 }
