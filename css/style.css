@@ -236,6 +236,7 @@ section.bg-curves,
 
 .menu-nav {
   align-self: center;
+  flex: 1;
 }
 
 .menu-nav a {
@@ -244,7 +245,7 @@ section.bg-curves,
 }
 
 .menu-nav ul {
-  float: right;
+  justify-content: flex-end;
   display: flex;
   flex-wrap: wrap;
 }
