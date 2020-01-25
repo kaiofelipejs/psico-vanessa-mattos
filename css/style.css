@@ -224,6 +224,12 @@ section.bg-curves,
   background: #f8f7f2;
 }
 
+@media (max-width: 739px) {
+  .menu-header {
+    flex-direction: row;
+  }
+}
+
 .menu-logo {
   margin: 0 10px;
   width: 20%;
@@ -236,6 +242,8 @@ section.bg-curves,
 }
 
 .menu-nav {
+  display: flex;
+  justify-content: flex-end;
   align-self: center;
   flex: 1;
 }
@@ -248,11 +256,10 @@ section.bg-curves,
 .menu-nav ul {
   justify-content: flex-end;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .menu-nav ul li a {
-  padding: 15px;
+  padding: 15px 20px;
   position: relative;
 }
 
@@ -276,6 +283,98 @@ section.bg-curves,
 
 .menu-nav ul li a:hover:after {
   width: 100%;
+}
+
+@media (max-width: 739px) {
+  .menu-nav ul li a::after,
+  .menu-nav ul li a::before,
+  .menu-nav ul li a:hover:after {
+    display: none;
+  }
+}
+
+/* MENU MOBILE */
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 739px) {
+  [data-menu="button"] {
+    display: flex;
+    align-items: center;
+    background: #cbac95;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 300;
+    outline: 0;
+  }
+
+  [data-menu="button"]::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: #222;
+    box-shadow: 0 5px #222, 0 -5px #222;
+    transition: transform 0.3s;
+  }
+
+  [data-menu="button"].active::before {
+    transform: rotate(90deg);
+  }
+
+  #menu {
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    background: #cbac95;
+    z-index: 200;
+    padding: 20px 0 10px 0;
+    margin-top: 50px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+
+  .menu-nav ul li {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .menu-nav ul li a {
+    padding: 0px 20px 10px 20px;
+    text-transform: none;
+  }
+
+  #menu.active {
+    display: block;
+    animation: show-down 0.3s forwards;
+  }
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /* INTRO */
