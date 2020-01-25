@@ -218,7 +218,7 @@ section.bg-curves,
 /* MENU */
 .menu {
   top: 0;
-  padding: 15px 0;
+  padding: 10px 0;
   position: sticky;
   width: 100%;
   background: #f8f7f2;
@@ -442,7 +442,6 @@ section.bg-curves,
   text-decoration: underline;
 }
 
-.sitemap,
 .contact,
 .social {
   flex-grow: 1;
@@ -485,11 +484,10 @@ section.bg-curves,
 }
 
 @media (max-width: 739px) {
-  .sitemap {
+  .footer {
     padding: 0;
-    margin: 10px 0 20px 0;
+    border: none;
   }
-
   .footer h3,
   .contact {
     display: none;
@@ -507,7 +505,7 @@ section.bg-curves,
   }
 
   .social {
-    height: 28px;
+    margin-top: 10px;
   }
 
   .icons img {
@@ -539,6 +537,7 @@ section.bg-curves,
 @media (max-width: 739px) {
   .copyright {
     padding: 10px;
+    border: none;
   }
   .copy-content {
     flex-direction: column;
