@@ -444,7 +444,6 @@ section.bg-curves,
 
 .footer {
   background-color: #1d454d;
-  padding: 30px;
   color: #f8f7f2;
 }
 
@@ -498,10 +497,6 @@ section.bg-curves,
 }
 
 @media (max-width: 739px) {
-  .footer {
-    padding: 0;
-    border: none;
-  }
   .footer h3,
   .contact {
     display: none;
