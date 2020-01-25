@@ -57,7 +57,6 @@ fieldset {
 }
 
 /* DEFAULT */
-
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
@@ -215,6 +214,20 @@ section.bg-curves,
   margin-top: 8px;
 }
 
+/* ANIMAÇÕES SCROLL */
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  transition: 0.4s;
+}
+
+.js-scroll.active-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s;
+}
+
 /* MENU */
 .menu {
   top: 0;
@@ -222,6 +235,7 @@ section.bg-curves,
   position: sticky;
   width: 100%;
   background: #f8f7f2;
+  z-index: 500;
 }
 
 @media (max-width: 739px) {
