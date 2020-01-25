@@ -521,7 +521,6 @@ section.bg-curves,
 }
 
 /* COPYRIGHT */
-
 .copyright {
   background-color: #222;
   padding: 20px;
@@ -532,6 +531,10 @@ section.bg-curves,
   display: flex;
   justify-content: space-between;
   font-size: small;
+}
+
+.copy-content a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 739px) {
