@@ -2,7 +2,7 @@ const sections = document.querySelectorAll(".js-scroll");
 
 export default function initAnimateScroll() {
   if (sections.length) {
-    const windowHalf = window.innerHeight * 0.75;
+    const windowHalf = window.innerHeight * 0.7;
 
     function animateScroll() {
       sections.forEach(section => {

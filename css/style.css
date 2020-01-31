@@ -231,8 +231,8 @@ section.bg-curves,
 /* MENU */
 .menu {
   top: 0;
-  padding: 10px 0;
-  position: sticky;
+  position: fixed;
+  padding: 25px 0;
   width: 100%;
   background: #f8f7f2;
   z-index: 500;
@@ -394,7 +394,7 @@ section.bg-curves,
 /* INTRO */
 .intro,
 .intro-page {
-  margin-top: 30px;
+  margin-top: 130px;
 }
 
 .intro h1 {
