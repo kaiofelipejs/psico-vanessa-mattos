@@ -445,6 +445,7 @@ section.bg-curves,
 .footer {
   background-color: #1d454d;
   color: #f8f7f2;
+  padding: 15px 0;
 }
 
 .footer ul li {
