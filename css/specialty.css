@@ -2,10 +2,6 @@
   align-items: center;
 }
 
-.assumption.bg-curves {
-  padding-top: 120px;
-}
-
 @media (max-width: 739px) {
   .assumption.bg-curves {
     padding-top: 60px;
@@ -33,7 +29,7 @@
 }
 
 @media (max-width: 739px) {
-  .assumption-item {
+  .flex-item.assumption-item {
     margin-bottom: 30px;
   }
   .practice img {
