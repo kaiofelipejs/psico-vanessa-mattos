@@ -59,7 +59,7 @@
     </section>
 
     <section class="container js-scroll">
-      <div class="blog-home">
+      <div class="blog-home flex-item">
         <h2>Blog</h2>
         <p>Conteúdo sobre ansiedade, stress, família e outros...</p>
 
@@ -67,7 +67,7 @@
           <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
           <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
           
-            <div class="blog-post flex-item">
+            <div class="blog-post">
               <a href="<?php the_permalink(); ?>">
                 <div class="blog-post-image">
                   <?php the_post_thumbnail(); ?>
@@ -84,8 +84,6 @@
           </div>
           <a href="/blog" class="btn">Acessar blog</a>
         </div>
-
-        
       </div>
     </section>
 <?php get_footer(); ?>

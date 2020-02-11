@@ -1,6 +1,5 @@
-.blog {
-  display: flex;
-  flex-direction: column;
+/* .blog,
+.blog-home {
   margin: 0 auto;
 }
 
@@ -8,9 +7,14 @@
   margin-bottom: 40px;
 }
 
+.posts.container {
+  margin-bottom: 60px;
+}
+
 .blog-post {
+  max-width: 280px;
+  margin: 0 10px;
   background-color: #cbac95;
-  box-shadow: #222;
 }
 
 .blog-post,
@@ -30,7 +34,6 @@
 .blog-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
 }
 
 .blog-button-next a::after {
@@ -43,29 +46,23 @@
   transition: 0.3s;
 }
 
-.blog-button-prev a::before,
-.blog-button-back a::before {
+.blog-button-prev a::before {
   content: "↢ ";
   transition: 0.3s;
 }
 
-.blog-button-prev a:hover::before,
-.blog-button-back a:hover::before {
+.blog-button-prev a:hover::before {
   padding-right: 20px;
   transition: 0.3s;
 }
 
 @media (max-width: 739px) {
-  .posts .blog-post {
-    margin-bottom: 30px;
+  .posts.container {
+    margin-bottom: 40px;
   }
 
-  .blog-home .posts {
-    margin-bottom: 0;
-  }
-
-  .blog-buttons {
-    margin-top: 30px;
+  .blog-post {
+    margin-bottom: 20px;
   }
 }
 
@@ -78,10 +75,10 @@
 }
 
 .post-content {
-  width: 80%;
-  margin: 0 auto 50px auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .post-content p {
   margin-bottom: 20px;
-}
+} */

@@ -2,8 +2,6 @@
 // Template Name: Blog
   get_header();
 ?>
-
-
     <main class="intro-page js-scroll">
       <div class="container">
         <div class="flex-item align-center">
@@ -26,7 +24,7 @@
       <div class="blog">
         <div class="posts container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="blog-post flex-item">
+            <div class="blog-post">
               <a href="<?php the_permalink(); ?>">
                 <div class="blog-post-image">
                   <?php the_post_thumbnail(); ?>
@@ -34,11 +32,11 @@
                 <div class="blog-post-info">
                   <h3><?php the_title()?></h3>
                   <p class="date"><?php echo get_the_date('j \d\e F \d\e Y');?></p>
-                <p><?php the_excerpt(); ?></p>
+                  <p><?php the_excerpt(); ?></p>
                 </div>
               </a>
             </div>
-          <?php endwhile; ?> 
+          <?php endwhile; else: endif; ?> 
         </div>
 
         <div class="blog-buttons">
@@ -50,10 +48,7 @@
             <?php next_posts_link('Posts antigos');?>  
           </p>
         </div>
-
       </div>
-        <?php else: endif; ?>
-
     </section>
 
 <?php get_footer(); ?>

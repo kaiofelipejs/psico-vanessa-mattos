@@ -14,9 +14,11 @@
          <div class="post-content">
             <p><?php the_content();?></p>
          </div>
-         <p class="blog-button-back">
-            <a href="/blog" class="blog-buttons">Voltar para o blog</a>
-         </p>
+		 <div class="blog-buttons">
+			 <p class="blog-button-prev">
+				<a href="/blog">Voltar para o blog</a>
+			 </p>
+		 </div>
       </div>
    </section>
 </article>
