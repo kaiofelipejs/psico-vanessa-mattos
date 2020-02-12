@@ -58,11 +58,11 @@
       </div>
     </section>
 
-    <section class="container js-scroll">
-      <div class="blog-home flex-item">
+    <section class="blog-wrapper container js-scroll">
+      <div class="blog flex-item">
         <h2>Blog</h2>
         <p>Conteúdo sobre ansiedade, stress, família e outros...</p>
-
+      
         <div class="posts container">
           <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
           <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
@@ -72,18 +72,20 @@
                 <div class="blog-post-image">
                   <?php the_post_thumbnail(); ?>
                 </div>
-                <div class="blog-post-info">
+                <div class="blog-post-title">
                   <h3><?php the_title()?></h3>
-                  <p class="date"><?php echo get_the_date('j \d\e F \d\e Y');?></p>
-                <p><?php the_excerpt(); ?></p>
+                  <small><?php echo get_the_date('j \d\e F \d\e Y');?></small>
                 </div>
               </a>
+                <div class="blog-post-info">
+                  <p><?php the_excerpt(); ?></p>
+                </div>
             </div>
 
             <?php endwhile; wp_reset_postdata(); ?> 
-          </div>
-          <a href="/blog" class="btn">Acessar blog</a>
-        </div>
-      </div>
+        </div>  
+
+      </div>  
+      <a href="/blog" class="btn">Acessar blog</a>
     </section>
 <?php get_footer(); ?>

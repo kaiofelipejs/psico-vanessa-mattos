@@ -24,18 +24,22 @@
       <div class="blog">
         <div class="posts container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          
             <div class="blog-post">
               <a href="<?php the_permalink(); ?>">
                 <div class="blog-post-image">
                   <?php the_post_thumbnail(); ?>
                 </div>
-                <div class="blog-post-info">
+                <div class="blog-post-title">
                   <h3><?php the_title()?></h3>
-                  <p class="date"><?php echo get_the_date('j \d\e F \d\e Y');?></p>
-                  <p><?php the_excerpt(); ?></p>
+                  <small><?php echo get_the_date('j \d\e F \d\e Y');?></small>
                 </div>
               </a>
+                <div class="blog-post-info">
+                  <p><?php the_excerpt(); ?></p>
+                </div>
             </div>
+            
           <?php endwhile; else: endif; ?> 
         </div>
 

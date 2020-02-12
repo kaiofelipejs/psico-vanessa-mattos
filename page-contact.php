@@ -4,8 +4,8 @@
 ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <main class="intro-page js-scroll">
-      <div class="container">
+    <main class="contact-wrapper container intro-page js-scroll">
+      <div class="align-center container">
         <div class="flex-item align-center">
           <img
             src="<?php echo get_template_directory_uri(); ?>/assets/img/contato.svg"

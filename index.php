@@ -4,7 +4,7 @@
 
 <article>
    <section class="post-title">
-      <div class="intro-page container">
+      <div class="container">
          <h2><?php the_title();?></h2>
       </div>
    </section>
