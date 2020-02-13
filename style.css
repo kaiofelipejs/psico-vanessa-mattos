@@ -168,6 +168,7 @@ section.bg-curves,
   line-height: 1rem;
   transition: 0.3s all ease-in-out;
   display: block;
+  margin: 0 auto;
 }
 
 .btn::after {
@@ -442,11 +443,10 @@ section.bg-curves,
     display: none;
   }
 }
-
 /* QUOTE */
 .quote {
   text-align: center;
-  margin-top: -10px;
+  margin-top: 50px;
 }
 
 .quote blockquote {
@@ -625,6 +625,15 @@ section.bg-curves,
 /* PÁGINA BLOG */
 .blog-wrapper {
   flex-direction: column;
+}
+
+.blog {
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.blog > h2 {
+  margin: 0 10px 15px 10px;
 }
 
 .blog > p {

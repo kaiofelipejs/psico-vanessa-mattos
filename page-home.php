@@ -58,10 +58,10 @@
       </div>
     </section>
 
-    <section class="blog-wrapper container js-scroll">
-      <div class="blog flex-item">
+    <section class="blog-wrapper js-scroll">
+      <div class="blog container flex-item">
         <h2>Blog</h2>
-        <p>Conteúdo sobre ansiedade, stress, família e outros...</p>
+        <p class="flex-item">Conteúdo sobre ansiedade, stress, família e outros...</p>
       
         <div class="posts container">
           <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
@@ -85,7 +85,9 @@
             <?php endwhile; wp_reset_postdata(); ?> 
         </div>  
 
-      </div>  
-      <a href="/blog" class="btn">Acessar blog</a>
+      </div>
+      <div class="container">
+        <a href="/blog" class="btn">Acessar blog</a>
+      </div>
     </section>
 <?php get_footer(); ?>
