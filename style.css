@@ -58,6 +58,10 @@ fieldset {
 /* DEFAULT */
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
+.is-style-default {
+  padding-inline-start: 40px;
+}
+
 html {
   height: 100%;
 }
@@ -71,7 +75,8 @@ body {
   flex-direction: column;
 }
 
-p {
+p,
+li {
   font-size: 18px;
 }
 
@@ -190,7 +195,7 @@ section.bg-curves,
   margin-left: 12px;
 }
 
-a[href="/blog"] {
+a[href="/blog"].btn {
   margin-bottom: 60px;
 }
 
@@ -571,8 +576,11 @@ a[href="/blog"] {
 .copy-content {
   display: flex;
   justify-content: space-between;
-  font-size: small;
   list-style: none;
+}
+
+.copy-content li {
+  font-size: 12px;
 }
 
 .copy-content a:hover {

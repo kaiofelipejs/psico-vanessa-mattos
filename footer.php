@@ -50,19 +50,24 @@
                href="mailto:psicovanessam@gmail.com"
                target="_blank"
                class="email"
+			      rel="noopener"
             >
                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/e-mail.png" alt="E-mail" />
             </a>
 
-            <a href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20" target="_blank" class="whatsapp">
+            <a 
+               href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20" 				target="_blank" 
+               class="whatsapp"
+               rel="noopener"
+			   >
                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp_icon.png" alt="Whatsapp" />
             </a>
 
-            <a href="https://www.facebook.com/psicovanessam/" target="_blank" class="facebook">
+            <a href="https://www.facebook.com/psicovanessam/" target="_blank" class="facebook" rel="noopener">
                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.png" alt="Facebook" />
             </a>
 
-            <a href="https://www.instagram.com/psicovanessam/" target="_blank" class="instagram">
+            <a href="https://www.instagram.com/psicovanessam/" target="_blank" class="instagram" rel="noopener">
                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.png" alt="Instagram" />
             </a>
             </div>
@@ -74,11 +79,10 @@
       <div class="container">
          <ul class="flex-item copy-content">
             <li>Copyright © 2020 | Psicóloga Vanessa Mattos</li>
-            <li>
-            Feito por
-            <a href="https://www.linkedin.com/in/kaiofelipejs/" target="_blank">
-               Kaio Felipe Silva
-            </a>
+            <li>Feito por
+					<a href="https://www.linkedin.com/in/kaiofelipejs/" target="_blank" rel="noopener">
+					   Kaio Felipe Silva
+					</a>
             </li>
          </ul>
       </div>

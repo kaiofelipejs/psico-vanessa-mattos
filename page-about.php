@@ -50,7 +50,7 @@
         <div class="publication js-scroll">
           <div class="flex-item align-center">
             <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v2.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v2.jpg" alt="Revista Cesusc Virtual">
             </a>
           </div>
 
@@ -58,7 +58,7 @@
             <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428">
               <h3>O Mundo em Rede: Mapeando a rede social de crianças em psicoterapia.</h3>
             </a>
-            <p class="date">Novembro de 2019</p>
+            <small>Novembro de 2019</small>
             <p class="publication-description">
             Este trabalho pretende apresentar um instrumento de avaliação e intervenção em psicologia, aplicado à infância e que é utilizado de forma lúdica no setting psicoterapêutico. O “Mundo em Rede”, nome dado ao instrumento, se propõe facilitar a construção e visualização da rede social da criança, considerando seu impacto na saúde emocional infantil.             </p>
           </div>
@@ -68,7 +68,7 @@
         <div class="publication js-scroll">
           <div class="flex-item align-center">
             <a href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/praticas-em-psico-escolar.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/praticas-em-psico-escolar.jpg" alt="Livro Práticas em Psicologia Escolas: do Ensino Técnico ao Superior">
             </a>
           </div>
 
@@ -76,7 +76,7 @@
             <a href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf">
               <h3>Práticas em Psicologia Escolas: do Ensino Técnico ao Superior, Cap. 01</h3>
             </a>
-            <p class="date">Junho de 2019</p>
+            <small>Junho de 2019</small>
             <p class="publication-description">
               O capítulo 1 tem como foco a atuação em Psicologia Educacional no IFSC, que ao longo de 09 anos estrutura o serviço de psicologia no Campus Florianópolis, a partir da tessitura de redes de significação por meio do trabalho coletivo.
             </p>
@@ -87,7 +87,7 @@
         <div class="publication js-scroll">
           <div class="flex-item align-center">
             <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v1.png" alt="Revista Cesusc Virtual">
             </a>
           </div>
 
@@ -95,7 +95,7 @@
             <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149">
               <h3>Família Trans: Uma experiência de genograma para a compreensão e rompimento de paradigmas sociais.</h3>
             </a>
-            <p class="date">Junho de 2019</p>
+            <small>Junho de 2019</small>
             <p class="publication-description">
               O objetivo do trabalho foi descrever a conjugalidade de um casal trans, ou seja, constituído por pessoas que se autoidentificam como transexuais, com suas implicações sociais e culturais. Utilizou-se como método a abordagem qualitativa, no qual realizou-se entrevista semiestruturada para a produção de um genograma familiar.
             </p>

@@ -14,18 +14,18 @@
         <div class="content-right flex-item align-center">
           <h2>Blog</h2>
           <p>
-          Acompanhe aqui conteúdos sobre ansiedade, stress, família e outros...
+            Conteúdos para aflorar seus conhecimentos...
           </p>
         </div>
       </div>
     </main>
 
     <section class="container js-scroll">
-      <div class="blog">
+       <div class="blog">
         <div class="posts container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          
-            <div class="blog-post">
+			
+		    	<div class="blog-post">
               <a href="<?php the_permalink(); ?>">
                 <div class="blog-post-image">
                   <?php the_post_thumbnail(); ?>
@@ -39,7 +39,7 @@
                   <p><?php the_excerpt(); ?></p>
                 </div>
             </div>
-            
+			
           <?php endwhile; else: endif; ?> 
         </div>
 

@@ -84,8 +84,7 @@
 
             <?php endwhile; wp_reset_postdata(); ?> 
         </div>  
-
-      </div>
+      </div>  
       <div class="container">
         <a href="/blog" class="btn">Acessar blog</a>
       </div>
