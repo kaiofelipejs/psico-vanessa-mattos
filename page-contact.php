@@ -26,7 +26,8 @@
               <li>
                 <a 
                   href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20" 
-                  target="_blank">
+                  target="_blank"
+                  rel="noopener">
                 <?php 
                   the_field('numero-whatsapp')
                 ?>
