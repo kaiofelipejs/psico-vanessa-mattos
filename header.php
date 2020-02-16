@@ -25,7 +25,7 @@
         </a>
 
         <nav class="menu-nav">
-          <button data-menu="button" aria-expanded="false"></button>
+          <button data-menu="button" aria-expanded="false" aria-label="Abrir menu"></button>
           <ul data-menu="list" id="menu">
             <li><a href="/home/">Home</a></li>
             <li><a href="/sobre/">Sobre</a></li>
