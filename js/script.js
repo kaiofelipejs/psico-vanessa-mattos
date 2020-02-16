@@ -1,7 +1,6 @@
 function outsideClick(element, events, callback) {
   const html = document.documentElement;
   const outside = "data-outside";
-  console.log("outside click done");
 
   if (!element.hasAttribute(outside)) {
     events.forEach(userEvent => {
@@ -20,10 +19,24 @@ function outsideClick(element, events, callback) {
   }
 }
 
+const debounce = function(func, wait, immediate) {
+  let timeout;
+  return function(...args) {
+    const context = this;
+    const later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
 function headerScroll() {
-  console.log("header scroll done");
   const header = document.querySelector("header");
-  if (document.documentElement.scrollTop >= 20) {
+  if (window.pageYOffset >= 100) {
     header.style.padding = "5px 0px 5px 0px";
   } else {
     header.style.padding = "25px 0px 25px 0px";
@@ -46,8 +59,7 @@ events.forEach(event => menuButton.addEventListener(event, openMenu));
 
 function animateScroll() {
   const elementAnimated = document.querySelectorAll(".js-scroll");
-  console.log("animate scroll done");
-  const windowHalf = window.innerHeight * 0.75;
+  const windowHalf = window.innerHeight * 0.9;
   elementAnimated.forEach(element => {
     const elementTop = element.getBoundingClientRect().top;
     const isElementVisible = elementTop - windowHalf;
@@ -59,5 +71,5 @@ function animateScroll() {
 
 headerScroll();
 animateScroll();
-window.addEventListener("scroll", animateScroll);
-window.addEventListener("scroll", headerScroll);
+window.addEventListener("scroll", debounce(headerScroll, 100));
+window.addEventListener("scroll", debounce(animateScroll, 100));

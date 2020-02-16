@@ -190,6 +190,10 @@ section.bg-curves,
   margin-left: 12px;
 }
 
+a[href="/blog"] {
+  margin-bottom: 60px;
+}
+
 .profile-photo {
   max-width: 375px;
   max-height: 375px;
@@ -446,7 +450,6 @@ section.bg-curves,
 /* QUOTE */
 .quote {
   text-align: center;
-  margin-top: 50px;
 }
 
 .quote blockquote {
