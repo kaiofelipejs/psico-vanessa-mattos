@@ -71,5 +71,5 @@ function animateScroll() {
 
 headerScroll();
 animateScroll();
-window.addEventListener("scroll", debounce(headerScroll, 100));
+window.addEventListener("scroll", headerScroll);
 window.addEventListener("scroll", debounce(animateScroll, 100));
