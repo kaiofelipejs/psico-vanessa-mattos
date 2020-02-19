@@ -20,7 +20,12 @@
       </div>
     </main>
 
-    <section class="focus bg-curves js-scroll active-scroll">
+    <svg class="curve-top" viewBox="0 0 1861 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 22.1488C0 22.1488 44.1575 57.6916 329.68 56.7126C615.203 55.7336 780.5 -38.5268 1165 18.9866C1549.5 76.5 1861 18.9867 1861 18.9867
+      V115C1861 115 1662.27 115 1512.73 115C1363.18 115 1202.81 115 939.805 115C676.803 115 624.764 115 418.725 115C212.686 115 0 115 0 115V22.1488Z"/>
+    </svg>
+
+    <section class="focus bg-wavy js-scroll active-scroll">
       <div class="container">
         <div class="content-left flex-item js-scroll">
           <h2><?php the_field('titulo-foco')?></h2>
@@ -42,20 +47,31 @@
       </div>
     </section>
 
-    <section class="publications container js-scroll">
+    <svg class="curve-bottom" viewBox="0 1 1861 194" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0.999542L372.576 0.999211C372.576 0.999211 941.995 0.996591 941.995 0.999211C941.995 1.00183 1861 0.999669 1861 0.999669V120.338C1861 120.338 1654.94 78.3447 1511.41 143.334C1367.89 208.323 1199.74 85.3435 941.995 143.334C684.249 201.325 552.313 219.822 372.576 143.334C192.839 66.8465 0 120.338 0 120.338V0.999542Z"/>
+    </svg>
 
+    <section class="publications container js-scroll">
       <div class="flex-item js-scroll">
         <h2>Trabalhos Publicados</h2>
 
         <div class="publication js-scroll">
           <div class="flex-item align-center">
-            <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428">
+            <a 
+              href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428"
+              target="_blank"
+              rel="noopener"  
+            >
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v2.jpg" alt="Revista Cesusc Virtual">
             </a>
           </div>
 
           <div class="publication-info flex-item">
-            <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428">
+            <a 
+              href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428" 
+              target="_blank"
+              rel="noopener"
+            >
               <h3>O Mundo em Rede: Mapeando a rede social de crianças em psicoterapia.</h3>
             </a>
             <small>Novembro de 2019</small>
@@ -67,13 +83,21 @@
 
         <div class="publication js-scroll">
           <div class="flex-item align-center">
-            <a href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf">
+            <a 
+              href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf"
+              target="_blank"
+              rel="noopener"
+            >
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/praticas-em-psico-escolar.jpg" alt="Livro Práticas em Psicologia Escolas: do Ensino Técnico ao Superior">
             </a>
           </div>
 
           <div class="publication-info flex-item">
-            <a href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf">
+            <a 
+              href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf"
+              target="_blank"
+              rel="noopener"
+            >
               <h3>Práticas em Psicologia Escolas: do Ensino Técnico ao Superior, Cap. 01</h3>
             </a>
             <small>Junho de 2019</small>
@@ -86,13 +110,21 @@
 
         <div class="publication js-scroll">
           <div class="flex-item align-center">
-            <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149">
+            <a 
+              href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149"
+              target="_blank"
+              rel="noopener"
+            >
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v1.png" alt="Revista Cesusc Virtual">
             </a>
           </div>
 
           <div class="publication-info flex-item">
-            <a href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149">
+            <a 
+              href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149"
+              target="_blank"
+              rel="noopener"
+            >
               <h3>Família Trans: Uma experiência de genograma para a compreensão e rompimento de paradigmas sociais.</h3>
             </a>
             <small>Junho de 2019</small>

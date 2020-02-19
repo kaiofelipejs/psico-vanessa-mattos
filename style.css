@@ -56,7 +56,7 @@ fieldset {
 }
 
 /* DEFAULT */
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap"); */
 
 .is-style-default {
   padding-inline-start: 40px;
@@ -125,7 +125,6 @@ img {
 }
 
 section.container,
-section.bg-curves,
 .intro,
 .intro-page {
   margin-bottom: 60px;
@@ -214,18 +213,6 @@ a[href="/blog"].btn {
 
 .align-center {
   align-self: center;
-}
-
-.bg-curves {
-  background: url(assets/background/curves.svg) no-repeat center center;
-  background-size: cover;
-  padding: 150px 0;
-}
-
-@media (max-width: 739px) {
-  .bg-curves {
-    padding: 100px 0;
-  }
 }
 
 .content-left {
@@ -440,23 +427,23 @@ a[href="/blog"].btn {
 }
 
 /* ABOUT */
-.about {
+.bg-wavy {
   background: #cbac95;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
-#curve-top,
-#curve-bottom {
+.curve-top,
+.curve-bottom {
   background: #f8f7f2;
   width: 100%;
 }
 
-#curve-top path,
-#curve-bottom path {
+.curve-top path,
+.curve-bottom path {
   fill: #cbac95;
 }
 
-#curve-bottom {
+.curve-bottom {
   margin-bottom: 60px;
 }
 
@@ -635,8 +622,8 @@ a[href="/blog"].btn {
   margin: 0 auto;
 }
 
-.publication-info {
-  display: block;
+.publication-info h3 {
+  text-align: center;
 }
 
 @media (max-width: 739px) {
@@ -815,19 +802,9 @@ a[href="/blog"].btn {
   margin-top: 20px;
 }
 
-/* PAGINA HOME */
-
 /* PÁGINA ESPECIALIDADE */
-
 .assumption {
   align-items: center;
-}
-
-@media (max-width: 739px) {
-  .assumption.bg-curves {
-    padding-top: 60px;
-    margin-bottom: 0;
-  }
 }
 
 .assumption h2 {

@@ -59,7 +59,7 @@ events.forEach(event => menuButton.addEventListener(event, openMenu));
 
 function animateScroll() {
   const elementAnimated = document.querySelectorAll(".js-scroll");
-  const windowHalf = window.innerHeight * 0.9;
+  const windowHalf = window.innerHeight * 0.8;
   elementAnimated.forEach(element => {
     const elementTop = element.getBoundingClientRect().top;
     const isElementVisible = elementTop - windowHalf;
@@ -72,4 +72,4 @@ function animateScroll() {
 headerScroll();
 animateScroll();
 window.addEventListener("scroll", headerScroll);
-window.addEventListener("scroll", debounce(animateScroll, 100));
+window.addEventListener("scroll", debounce(animateScroll, 50));
