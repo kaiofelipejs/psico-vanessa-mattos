@@ -58,10 +58,15 @@ fieldset {
 /* DEFAULT */
 /* @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap"); */
 
+/* PLUGINS WP */
 .is-style-default {
   padding-inline-start: 40px;
 }
-
+.dpsp-share-text {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
 html {
   height: 100%;
 }
@@ -429,7 +434,6 @@ a[href="/blog"].btn {
 /* ABOUT */
 .bg-wavy {
   background: #cbac95;
-  padding-top: 50px;
 }
 
 .curve-top,
@@ -450,6 +454,10 @@ a[href="/blog"].btn {
 @media (max-width: 739px) {
   .about {
     padding-bottom: 40px;
+  }
+
+  .bg-wavy {
+    padding-top: 30px;
   }
 }
 

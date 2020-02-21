@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <title><?php bloginfo('name') ?> <?php wp_title(' | ')?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="<?php bloginfo('name') ?> <?php the_field('description-seo')?>"/>
+    <meta name="description" content="<?php bloginfo('name') . '. '?> <?php the_field('description-seo')?>"/>
 
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="<?php bloginfo('name') ?> <?php wp_title(' | ')?> "/>
-    <meta property="og:description" content="<?php bloginfo('name') . '. '?> <?php the_field('description-seo')?>"/>
-    <meta property="og:url" content="http://vanessamattos.com.br"/>
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/icons/logo_horizontal.png"/>
+    <?php 
+      if (is_page()) {
+    ?>
+      <meta property="og:url" content="http://vanessamattos.com.br"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="<?php bloginfo('name') ?> <?php wp_title(' | ')?> "/>
+      <meta property="og:description" content="<?php bloginfo('name') . '. '?> <?php the_field('description-seo')?>"/>
+      <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/icons/logo_horizontal.png"/>
+    <?php } ?>
 
    <!-- Inicio WP Header -->
    <?php wp_head(); ?>
