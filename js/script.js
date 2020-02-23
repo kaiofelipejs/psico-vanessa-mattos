@@ -38,8 +38,10 @@ function headerScroll() {
   const header = document.querySelector("header");
   if (window.pageYOffset >= 100) {
     header.style.padding = "5px 0px 5px 0px";
+    header.style.borderBottom = "1px solid rgba(203, 172, 149, 0.3)";
   } else {
     header.style.padding = "25px 0px 25px 0px";
+    header.style.borderBottom = "none";
   }
 }
 
