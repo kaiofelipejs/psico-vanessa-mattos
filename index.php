@@ -24,7 +24,6 @@
 </article>
 
 <?php endwhile; else: ?>
-
    <main class="intro-page contact-wrapper js-scroll">
       <div class="container">
          <h1>Ops, essa página não existe...</h1>
