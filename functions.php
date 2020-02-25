@@ -34,13 +34,19 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 // Habilitar Menus
 add_theme_support('menus');
 
+// Registrar Menu
+function register_my_menu(){
+   register_nav_menu('menu-principal',__('Menu Principal'));
+}
+add_action('init', 'register_my_menu');
+
 //Habilitar imagens em destaque
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
 
 // Diminuir tamanho do excerpt
 function wpdocs_custom_excerpt_length( $length ) {
    return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
 	   
 ?>

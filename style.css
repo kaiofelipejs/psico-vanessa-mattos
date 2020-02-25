@@ -247,7 +247,7 @@ a[href="/blog"].btn {
 }
 
 /* MENU */
-.menu {
+.menu-wrapper {
   top: 0;
   position: fixed;
   padding: 25px 0 25px 0;
@@ -294,6 +294,10 @@ a[href="/blog"].btn {
 .menu-nav ul li a {
   padding: 15px 20px;
   position: relative;
+}
+
+.menu-nav ul li.current-menu-item a::after {
+  width: 50%;
 }
 
 .menu-nav ul li a:after {
@@ -360,7 +364,7 @@ a[href="/blog"].btn {
     transform: rotate(90deg);
   }
 
-  #menu {
+  #menu-menu-principal {
     display: none;
     flex-wrap: wrap;
     position: absolute;
@@ -386,7 +390,7 @@ a[href="/blog"].btn {
     color: white;
   }
 
-  #menu.active {
+  #menu-menu-principal.active {
     display: block;
     animation: show-down 0.3s forwards;
   }

@@ -46,7 +46,7 @@ function headerScroll() {
 }
 
 const menuButton = document.querySelector('[data-menu="button"]');
-const menuList = document.querySelector('[data-menu="list"]');
+const menuList = document.querySelector(".menu");
 const events = ["click"];
 
 function openMenu() {

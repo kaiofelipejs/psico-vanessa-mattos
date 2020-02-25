@@ -22,7 +22,7 @@
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/icons/favicon.ico" />
   </head>
   <body>
-    <header class="menu js-scroll">
+    <header class="menu-wrapper js-scroll">
       <div class="container menu-header">
         <a href="/" class="menu-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo_horizontal.png" alt="Vanessa Mattos" />
@@ -30,13 +30,14 @@
 
         <nav class="menu-nav">
           <button data-menu="button" aria-expanded="false" aria-label="Abrir menu"></button>
-          <ul data-menu="list" id="menu">
-            <li><a href="/home/">Home</a></li>
-            <li><a href="/sobre/">Sobre</a></li>
-            <li><a href="/especialidade/">Especialidade</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/contato/">Contato</a></li>
-          </ul>
+            <?php 
+              $args = array(
+                'menu' => 'principal',
+                'theme-location' => 'menu-principal',
+                'container' => false
+              );
+              wp_nav_menu($args);
+            ?>
         </nav>
       </div>
     </header>
