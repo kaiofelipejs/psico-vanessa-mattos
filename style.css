@@ -701,6 +701,21 @@ a[href="/blog"].btn {
   padding: 20px 20px 20px 20px;
 }
 
+.blog-post-data {
+  display: flex;
+  align-items: center;
+}
+
+.blog-post-data svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+}
+
+.blog-post-data small {
+  align-self: flex-end;
+}
+
 .blog-post-info {
   padding: 0 20px 20px 20px;
 }
@@ -764,8 +779,13 @@ a[href="/blog"].btn {
 }
 
 .post-content {
-  width: 97%;
   margin: 0 auto;
+}
+
+.post-content .rt-reading-time {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .post-content a {
