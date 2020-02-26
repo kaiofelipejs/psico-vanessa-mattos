@@ -55,25 +55,20 @@ fieldset {
   margin: 0;
 }
 
-/* DEFAULT */
-/* @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap"); */
-
-/* PLUGINS WP */
-.is-style-default {
-  padding-inline-start: 40px;
-}
+/* PLUGIN SOCIAL PUG */
 .dpsp-share-text {
   text-align: center;
   font-style: italic;
   margin-top: 40px;
 }
+
 html {
   height: 100%;
 }
 
 body {
   background-color: #f8f7f2;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   color: #222;
   min-height: 100%;
   display: flex;
@@ -683,7 +678,6 @@ a[href="/blog"].btn {
   margin: 0 10px;
   background-color: #cbac95;
   transition: 0.3s;
-  /* box-shadow: rgba(203, 172, 149) 0px 4px 10px 0px; */
   box-shadow: 0px 8px 20px -5px rgba(102, 91, 83, 1);
 }
 
@@ -762,6 +756,7 @@ a[href="/blog"].btn {
 
 .post-title h2 {
   margin: 0 auto;
+  text-align: center;
 }
 
 .post-wrapper-content {
@@ -769,12 +764,24 @@ a[href="/blog"].btn {
 }
 
 .post-content {
-  width: 93%;
+  width: 97%;
   margin: 0 auto;
+}
+
+.post-content a {
+  font-weight: bold;
 }
 
 .post-content p {
   margin-bottom: 20px;
+}
+
+.post-content ul {
+  padding-left: 40px;
+}
+
+.post-content ul li {
+  margin-bottom: 5px;
 }
 
 /* PÁGINA CONTATO */
