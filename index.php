@@ -3,11 +3,11 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <article>
-   <section class="post-title">
-      <div class="container">
+   <main class="container">
+      <div class="post-title ">
          <h2><?php the_title();?></h2>
       </div>
-   </section>
+   </main>
 
    <section class="container">
       <div class="post-wrapper-content">
