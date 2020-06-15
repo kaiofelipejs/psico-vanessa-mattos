@@ -48,7 +48,7 @@
 
 <section class="psico container js-scroll">
   <div class="content-left flex-item container">
-    <h2>Especialidade</h2>
+    <h2><?php the_field('titulo-especialidade', $speciality);?></h2>
     <p>
       <?php the_field('first-paragrafo-especialidade', $speciality);?>
     </p>
@@ -69,7 +69,7 @@
 <section class="blog-wrapper js-scroll">
   <div class="blog container flex-item">
     <h2>Blog</h2>
-    <p class="flex-item">Conteúdo sobre ansiedade, stress, família e outros...</p>
+    <p class="flex-item">Conteúdos para aflorar seus conhecimentos...</p>
   
     <div class="posts container">
       <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
@@ -81,19 +81,19 @@
               <?php the_post_thumbnail(); ?>
             </div>
             <div class="blog-post-title">
-              <h3><?php the_title()?></h3>
-              <div class="blog-post-data">
-                <svg id="clock" enable-background="new 0 0 443.294 443.294" viewBox="0 0 443.294 443.294"  xmlns="http://www.w3.org/2000/svg">
-                  <path d="m221.647 0c-122.214 0-221.647 99.433-221.647 221.647s99.433 221.647 221.647 221.647 221.647-99.433 221.647-221.647-99.433-221.647-221.647-221.647zm0 415.588c-106.941 0-193.941-87-193.941-193.941s87-193.941 193.941-193.941 193.941 87 193.941 193.941-87 193.941-193.941 193.941z"/>
-                  <path d="m235.5 83.118h-27.706v144.265l87.176 87.176 19.589-19.589-79.059-79.059z"/>
-                </svg>
-                <small><?php echo do_shortcode('[rt_reading_time postfix="minutos" postfix_singular="minuto"]') ?> • <?php echo get_the_date('j M, Y');?> </small>
-              </div>
-            </div>
+      <h3><?php the_title()?></h3>
+      <div class="blog-post-data">
+        <svg id="clock" enable-background="new 0 0 443.294 443.294" viewBox="0 0 443.294 443.294" xmlns="http://www.w3.org/2000/svg">
+        <path d="m221.647 0c-122.214 0-221.647 99.433-221.647 221.647s99.433 221.647 221.647 221.647 221.647-99.433 221.647-221.647-99.433-221.647-221.647-221.647zm0 415.588c-106.941 0-193.941-87-193.941-193.941s87-193.941 193.941-193.941 193.941 87 193.941 193.941-87 193.941-193.941 193.941z"/>
+        <path d="m235.5 83.118h-27.706v144.265l87.176 87.176 19.589-19.589-79.059-79.059z"/>
+        </svg>
+        <small><?php echo do_shortcode('[rt_reading_time postfix="minutos" postfix_singular="minuto"]') ?> • <?php echo get_the_date('j M, Y');?> </small>
+      </div>
+      </div>
           </a>
-            <div class="blog-post-info">
-              <p><?php the_excerpt(); ?></p>
-            </div>
+          <div class="blog-post-info">
+            <p><?php the_excerpt(); ?></p>
+          </div>
         </div>
 
         <?php endwhile; wp_reset_postdata(); ?> 

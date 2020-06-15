@@ -32,35 +32,32 @@
   </svg>
 
   <section class="assumption bg-wavy js-scroll active-scroll">
-    <h2 class="js-scroll">Pressupostos da Psicologia Sistêmica</h2>
+    <h2 class="js-scroll"><?php the_field('titulo-secao-bloco') ?></h2>
     <div class="container">
       <div class="flex-item assumption-item js-scroll">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/complexidade.png" alt="Complexidade" />
-        <h3>Complexidade</h3>
+        <img src="<?php the_field('primeiro-icone-bloco') ?>" alt="Icone do primeiro tópico" />
+        <h3><?php the_field('primeiro-titulo-bloco') ?></h3>
         <p>
-          Visualiza as interrelações entre os fenômenos, através de uma
-          atitude contextualizadora.
+          <?php the_field('primeiro-descricao-bloco') ?>
         </p>
       </div>
 
       <div class="flex-item assumption-item js-scroll">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instabilidade.png" alt="instabilidade" />
-        <h3>Instabilidade</h3>
+        <img src="<?php the_field('segundo-icone-bloco') ?>" alt="Icone do segundo tópico" />
+        <h3><?php the_field('segundo-titulo-bloco') ?></h3>
         <p>
-          Reconhece a imprevisibilidade, a irreversibilidade e a
-          incontrabilidade dos fenômenos
+          <?php the_field('segundo-descricao-bloco') ?>
         </p>
       </div>
 
       <div class="flex-item assumption-item js-scroll">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/icons/intersubjetividade.png"
-          alt="intersubjetividade"
+          src="<?php the_field('terceiro-icone-bloco') ?>"
+          alt="Icone do terceiro tópico"
         />
-        <h3>Intersubjetividade</h3>
+        <h3><?php the_field('terceiro-titulo-bloco') ?></h3>
         <p>
-          Dialoga com a experiência subjetiva e admite o multi-versa de
-          diferentes narrativas.
+          <?php the_field('terceiro-descricao-bloco') ?>
         </p>
       </div>
     </div>

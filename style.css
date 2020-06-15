@@ -55,6 +55,8 @@ fieldset {
 	margin: 0;
 }
 
+/* DEFAULT */
+
 /* PLUGINS WP */
 .dpsp-share-text {
 	text-align: center;
@@ -867,14 +869,13 @@ a[href="/blog"].btn {
 	margin-bottom: 40px;
 }
 
-.assumption-item,
-.assumption-item img {
+.assumption-item {
 	text-align: center;
-	margin: 0 auto;
 }
 
 .assumption-item img {
-	margin-bottom: 20px;
+	width: 170px;
+	margin: 0 auto 20px auto;
 }
 
 .assumption-item h3 {
@@ -888,4 +889,48 @@ a[href="/blog"].btn {
 	.practice img {
 		display: none;
 	}
+}
+
+/* ASSINE */
+/* EMBEDDED FORM MAIL CHIMP */
+#mc_embed_signup {
+	background: #3f6c75;
+	padding: 30px 0;
+}
+
+.assine form {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.assine-info {
+	color: #f8f7f2;
+}
+
+.email-form {
+	padding: 10px;
+	border: 3px solid #1d454d;
+	border-radius: 12px;
+	background: #f8f7f2;
+	font-size: 18px;
+	font-style: italic;
+	margin-right: 10px;
+	width: 100%;
+}
+
+@media (max-width: 739px) {
+	.email-form {
+		width: calc(100% - 112px);
+	}
+}
+
+.btn-submit-form {
+	text-align: center;
+	border: 1px solid #c35e1e;
+	padding: 15px;
+	border-radius: 12px;
+	background-color: #c35e1e;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
 }
