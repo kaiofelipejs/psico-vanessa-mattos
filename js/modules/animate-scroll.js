@@ -5,7 +5,7 @@ export default function initAnimateScroll() {
     const windowHalf = window.innerHeight * 0.75;
 
     function animateScroll() {
-      elementAnimated.forEach(element => {
+      elementAnimated.forEach((element) => {
         const elementTop = element.getBoundingClientRect().top;
         const isElementVisible = elementTop - windowHalf;
         if (isElementVisible < 0) {

@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template Name: Contato
   get_header();
 ?>
@@ -23,11 +23,11 @@
         <ul>
           <li><span><?php the_field('endereco-email') ?></span></li>
           <li>
-            <a 
-              href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20" 
+            <a
+              href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
               target="_blank"
               rel="noopener">
-            <?php 
+            <?php
               the_field('numero-whatsapp')
             ?>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp_black.png" alt="" />

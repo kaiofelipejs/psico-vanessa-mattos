@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template Name: Especialidade
   get_header();
 ?>

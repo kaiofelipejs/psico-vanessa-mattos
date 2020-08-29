@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template Name: Home
   get_header();
   $blog = get_page_by_title('blog');
@@ -70,11 +70,11 @@
   <div class="blog container flex-item">
     <h2>Blog</h2>
     <p class="flex-item">Conteúdos para aflorar seus conhecimentos...</p>
-  
+
     <div class="posts container">
       <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-      
+
         <div class="blog-post">
           <a href="<?php the_permalink(); ?>">
             <div class="blog-post-image">
@@ -96,9 +96,9 @@
           </div>
         </div>
 
-        <?php endwhile; wp_reset_postdata(); ?> 
-    </div>  
-  </div>  
+        <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+  </div>
   <div class="container">
     <a href="/blog" class="btn">Acessar blog</a>
   </div>

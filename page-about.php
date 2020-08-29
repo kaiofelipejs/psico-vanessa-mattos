@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template Name: Sobre
   get_header();
 ?>
@@ -56,18 +56,18 @@
 
     <div class="publication js-scroll">
       <div class="flex-item align-center">
-        <a 
+        <a
           href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428"
           target="_blank"
-          rel="noopener"  
+          rel="noopener"
         >
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/caderno-iniciacao-v2.jpg" alt="Revista Cesusc Virtual">
         </a>
       </div>
 
       <div class="publication-info flex-item">
-        <a 
-          href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428" 
+        <a
+          href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/428"
           target="_blank"
           rel="noopener"
         >
@@ -82,7 +82,7 @@
 
     <div class="publication js-scroll">
       <div class="flex-item align-center">
-        <a 
+        <a
           href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf"
           target="_blank"
           rel="noopener"
@@ -92,7 +92,7 @@
       </div>
 
       <div class="publication-info flex-item">
-        <a 
+        <a
           href="https://www.ufpi.br/arquivos_download/arquivos/VOLUME_0920190903151209.pdf"
           target="_blank"
           rel="noopener"
@@ -109,7 +109,7 @@
 
     <div class="publication js-scroll">
       <div class="flex-item align-center">
-        <a 
+        <a
           href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149"
           target="_blank"
           rel="noopener"
@@ -119,7 +119,7 @@
       </div>
 
       <div class="publication-info flex-item">
-        <a 
+        <a
           href="http://cesuscvirtual.com.br/revistas/index.php/CIC-CESUSC/article/view/149"
           target="_blank"
           rel="noopener"
@@ -135,6 +135,6 @@
     <hr />
   </div>
 </section>
-    
+
 <?php endwhile; else: endif; ?>
 <?php get_footer(); ?>

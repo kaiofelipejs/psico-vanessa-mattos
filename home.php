@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template Name: Blog
   get_header();
 ?>
@@ -24,7 +24,7 @@
   <div class="blog">
     <div class="posts container">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  
+
       <div class="blog-post">
         <a href="<?php the_permalink(); ?>">
           <div class="blog-post-image">
@@ -45,17 +45,17 @@
           <p><?php the_excerpt(); ?></p>
         </div>
         </div>
-  
-      <?php endwhile; else: endif; ?> 
+
+      <?php endwhile; else: endif; ?>
     </div>
 
     <div class="blog-buttons">
       <p class="blog-button-prev">
-        <?php previous_posts_link('Posts recentes');?>  
+        <?php previous_posts_link('Posts recentes');?>
       </p>
 
       <p class="blog-button-next">
-        <?php next_posts_link('Posts antigos');?>  
+        <?php next_posts_link('Posts antigos');?>
       </p>
     </div>
   </div>
