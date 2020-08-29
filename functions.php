@@ -1,14 +1,15 @@
-<?php 
-function add_scripts() {  
+<?php
+
+function add_scripts() {
    wp_register_script(
-      'script', 
-      get_template_directory_uri() . 
+      'script',
+      get_template_directory_uri() .
       '/js/script.js',
 	   array(),
 	   null,
 	   true
-   ); 
-   
+   );
+
    wp_enqueue_script('script');
 }
 add_action('wp_enqueue_scripts', 'add_scripts');
@@ -48,5 +49,5 @@ function wpdocs_custom_excerpt_length( $length ) {
    return 20;
 }
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
-	   
+
 ?>
