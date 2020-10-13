@@ -34,6 +34,12 @@
             </a>
           </li>
         </ul>
+        <a
+          href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
+          target="_blank"
+          rel="noopener"
+          class="btn contact"
+        >Chamar no WhatsApp</a>
       </div>
 
       <div class="contact-social">

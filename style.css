@@ -200,6 +200,7 @@ a[href="/blog"].btn {
 }
 
 .btn.contact {
+  margin-top: 20px;
   padding: 20px 34px;
 }
 
