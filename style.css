@@ -199,6 +199,15 @@ a[href="/blog"].btn {
   margin-bottom: 60px;
 }
 
+.btn.contact {
+  padding: 20px 34px;
+}
+
+.btn.contact:hover {
+  padding: 20px;
+  text-decoration: none;
+}
+
 .profile-photo {
   max-width: 375px;
   max-height: 375px;
@@ -427,6 +436,7 @@ a[href="/blog"].btn {
 .intro h1 {
   align-self: center;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 739px) {
@@ -844,6 +854,7 @@ a[href="/blog"].btn {
 
 .contact-info ul {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .contact-info a {
