@@ -2,9 +2,9 @@
 Theme Name: Vanessa Mattos
 Theme URI: http://www.vanessamattos.com.br
 Author: Kaio Felipe Silva
-Author URI: http://linkedin.com/in/kaiofelipejs
+Author URI: https://kaiofelipejs.dev
 Description: Tema criado para a psicóloga Vanessa Mattos
-Version: 1.0
+Version: 1.1
 */
 
 /* RESET */
@@ -203,6 +203,10 @@ a[href="/blog"].btn {
   max-width: 375px;
   max-height: 375px;
   align-self: center;
+}
+
+.profile-photo img {
+  border-radius: 50%;
 }
 
 @media (max-width: 739px) {

@@ -28,7 +28,7 @@
   <div class="container js-scroll">
     <div class="flex-item profile-photo">
       <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-photo.png"
+        src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-photo.jpeg"
         alt="Foto profissional da Psicóloga Vanessa Mattos"
       />
     </div>
