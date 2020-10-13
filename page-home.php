@@ -8,9 +8,13 @@
 
 <main class="intro js-scroll">
   <div class="container">
-    <h1 class="flex-item">
-      <?php the_field('frase-intro');?>
-    </h1>
+    <div class="flex-item align-center">
+      <h1>
+        <?php the_field('frase-intro');?>
+      </h1>
+      <a href="/contato" class="btn">Agendar conversa</a>
+    </div>
+
     <div class="flex-item align-center">
       <img
         src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage.svg"
