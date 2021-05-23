@@ -31,18 +31,19 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
 
+    <?php $home = get_page_by_title('home'); ?>
     <title><?php wp_title('|')?></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="psicologia, psicóloga em Florianópolis, psicóloga, atendimento psicológico, atendimento psicológico online">
-    <meta name="description" content="<?php the_field('description-seo')?>"/>
+    <meta name="description" content="<?php the_field('seo_description', $home) ?>"/>
 
     <?php
       if (is_page()) {
     ?>
       <meta property="og:type" content="website"/>
       <meta property="og:title" content="<?php wp_title('|')?> "/>
-      <meta property="og:description" content="<?php the_field('description-seo')?>"/>
+      <meta property="og:description" content="<?php the_field('seo_description', $home) ?>"/>
       <meta property="og:url" content="http://www.vanessamattos.com.br"/>
       <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/icons/logo_horizontal.png"/>
     <?php } ?>

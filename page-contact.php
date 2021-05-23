@@ -1,6 +1,7 @@
 <?php
 // Template Name: Contato
   get_header();
+  $whatsapp_number_formatted = WhatsappNumberFormatted(get_field('whatsapp_number'));
 ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <main class="contact-wrapper container intro-page js-scroll">
@@ -21,25 +22,35 @@
 
       <div class="contact-info">
         <ul>
-          <li><span><?php the_field('endereco-email') ?></span></li>
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
+              href="mailto:<?php the_field('email_address') ?>"
               target="_blank"
-              rel="noopener">
-            <?php
-              the_field('numero-whatsapp')
-            ?>
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp_black.png" alt="" />
+              class="email"
+              rel="noopener noreferrer"
+            >
+              <?php the_field('email_address') ?>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_number_formatted ?>&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
+              target="_blank"
+              rel="noopener"
+            >
+              <?php the_field('whatsapp_number') ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp_black.png" alt="WhatsApp icon" />
             </a>
           </li>
         </ul>
         <a
-          href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
+          href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_number_formatted ?>&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
           target="_blank"
           rel="noopener"
           class="btn contact"
-        >Chamar no WhatsApp</a>
+        >
+          Chamar no WhatsApp
+        </a>
       </div>
 
       <div class="contact-social">

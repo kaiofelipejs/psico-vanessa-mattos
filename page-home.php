@@ -10,7 +10,7 @@
   <div class="container">
     <div class="flex-item align-center">
       <h1>
-        <?php the_field('frase-intro');?>
+        <?php the_field('slogan_intro');?>
       </h1>
       <a href="/contato" class="btn">Agendar conversa</a>
     </div>
@@ -38,9 +38,9 @@
     </div>
 
     <div class="content-right flex-item align-center">
-      <h2><?php the_field('titulo-sobre', $about); ?></h2>
-      <p><?php the_field('primeiro-paragrafo-sobre', $about); ?></p>
-      <p><?php the_field('terceiro-paragrafo-sobre', $about); ?></p>
+      <h2><?php the_field('about_title', $about); ?></h2>
+      <p><?php the_field('first_paragraph_about', $about); ?></p>
+      <p><?php the_field('second_paragraph_about', $about); ?></p>
       <a href="/sobre" class="btn">Conhecer mais</a>
     </div>
   </div>
@@ -52,16 +52,7 @@
 
 <section class="psico container js-scroll">
   <div class="content-left flex-item container">
-    <h2><?php the_field('titulo-especialidade', $speciality);?></h2>
-    <p>
-      <?php the_field('first-paragrafo-especialidade', $speciality);?>
-    </p>
-    <p>
-      <?php the_field('segundo-paragrafo-especialidade', $speciality);?>
-    </p>
-    <p>
-      <?php the_field('terceiro-paragrafo-especialidade', $speciality);?>
-    </p>
+    <?php include(TEMPLATEPATH . "/include/practice.php"); ?>
     <a href="/especialidade" class="btn">Saiba mais</a>
   </div>
 
@@ -85,15 +76,17 @@
               <?php the_post_thumbnail(); ?>
             </div>
             <div class="blog-post-title">
-      <h3><?php the_title()?></h3>
-      <div class="blog-post-data">
-        <svg id="clock" enable-background="new 0 0 443.294 443.294" viewBox="0 0 443.294 443.294" xmlns="http://www.w3.org/2000/svg">
-        <path d="m221.647 0c-122.214 0-221.647 99.433-221.647 221.647s99.433 221.647 221.647 221.647 221.647-99.433 221.647-221.647-99.433-221.647-221.647-221.647zm0 415.588c-106.941 0-193.941-87-193.941-193.941s87-193.941 193.941-193.941 193.941 87 193.941 193.941-87 193.941-193.941 193.941z"/>
-        <path d="m235.5 83.118h-27.706v144.265l87.176 87.176 19.589-19.589-79.059-79.059z"/>
-        </svg>
-        <small><?php echo do_shortcode('[rt_reading_time postfix="minutos" postfix_singular="minuto"]') ?> • <?php echo get_the_date('j M, Y');?> </small>
-      </div>
-      </div>
+              <h3><?php the_title()?></h3>
+              <div class="blog-post-data">
+                <svg id="clock" enable-background="new 0 0 443.294 443.294" viewBox="0 0 443.294 443.294" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m221.647 0c-122.214 0-221.647 99.433-221.647 221.647s99.433 221.647 221.647 221.647 221.647-99.433 221.647-221.647-99.433-221.647-221.647-221.647zm0 415.588c-106.941 0-193.941-87-193.941-193.941s87-193.941 193.941-193.941 193.941 87 193.941 193.941-87 193.941-193.941 193.941z"/>
+                  <path d="m235.5 83.118h-27.706v144.265l87.176 87.176 19.589-19.589-79.059-79.059z"/>
+                </svg>
+                <small>
+                  <?php echo do_shortcode('[rt_reading_time postfix="minutos" postfix_singular="minuto"]') ?> • <?php echo get_the_date('j M, Y');?>
+                </small>
+              </div>
+            </div>
           </a>
           <div class="blog-post-info">
             <p><?php the_excerpt(); ?></p>

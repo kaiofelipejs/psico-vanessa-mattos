@@ -50,4 +50,11 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
 
+function WhatsappNumberFormatted($number) {
+   $country_code = "55";
+   $number_formatted = str_replace( array(  '(', ')', '-', ' ' ), '', $number);
+
+   return "{$country_code}{$number_formatted}";
+}
+
 ?>

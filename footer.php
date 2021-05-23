@@ -1,13 +1,15 @@
 <?php
    $home = get_page_by_title('home');
-   if (is_page()  && !is_page(array ('blog', 'contato'))) {
+   $contact = get_page_by_title('contato');
+   $whatsapp_number_formatted = WhatsappNumberFormatted(get_field('whatsapp_number', $contact));
+   if (is_page() && !is_page(array ('blog', 'contato'))) {
 ?>
 <section class="container quote js-scroll">
    <blockquote>
       <p>
          "<?php the_field('quote', $home);?>"
       </p>
-      <cite>— <?php the_field('citacao', $home);?></cite>
+      <cite>— <?php the_field('quote_author', $home);?></cite>
    </blockquote>
 </section>
 <?php } ?>
@@ -16,8 +18,8 @@
 	<div id="mc_embed_signup" >
     <div class="assine container">
     <div class="assine-info flex-item">
-      <h2><?php the_field('titulo_newsletter', $home); ?></h2>
-      <p><?php the_field('subtitulo_newsletter', $home)?></p>
+      <h2><?php the_field('title_newsletter', $home); ?></h2>
+      <p><?php the_field('subtitle_newsletter', $home)?></p>
     </div>
 
     <form
@@ -51,20 +53,22 @@
         <h3>Contato</h3>
         <ul>
           <li>
-            <span>
-              <?php
-                $contact = get_page_by_title('contato');
-                the_field('endereco-email', $contact)
-              ?>
-            </span>
+            <a
+              href="mailto:<?php the_field('email_address', $contact) ?>"
+              target="_blank"
+              class="email"
+              rel="noopener noreferrer"
+            >
+              <?php the_field('email_address', $contact) ?>
+            </a>
           </li>
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
+              href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_number_formatted ?>&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
               target="_blank"
               class="email"
               rel="noopener noreferrer">
-                <?php the_field('numero-whatsapp', $contact)?>
+                <?php the_field('whatsapp_number', $contact)?>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp.png" alt="Whatsapp" />
             </a>
           </li>
@@ -76,16 +80,8 @@
 
         <div class="icons">
           <a
-            href="mailto:psicovanessam@gmail.com"
+            href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_number_formatted ?>&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
             target="_blank"
-            class="email"
-            rel="noopener noreferrer"
-          >
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/e-mail.png" alt="E-mail" />
-          </a>
-
-          <a
-            href="https://api.whatsapp.com/send?phone=5548984463359&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20" 				target="_blank"
             class="whatsapp"
             rel="noopener noreferrer"
           >
@@ -107,7 +103,7 @@
   <section class="copyright">
     <div class="container">
       <ul class="flex-item copy-content">
-        <li>Copyright © 2020 | Psicóloga Vanessa Mattos</li>
+        <li>Copyright &copy; 2019 - <?php echo date('Y') ?> | Psicóloga Vanessa Mattos</li>
         <li>Feito por
           <a href="https://kaiofelipejs.dev/" target="_blank" rel="noopener noreferrer">
             Kaio Felipe Silva

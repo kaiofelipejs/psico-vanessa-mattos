@@ -8,13 +8,16 @@
   <div class="container">
     <div class="flex-item profile-photo js-scroll ">
       <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-photo.png"
+        src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-photo.jpeg"
         alt="Foto profissional da Psicóloga Vanessa Mattos"
       />
     </div>
 
     <div class="content-right flex-item js-scroll">
-      <?php include(TEMPLATEPATH . "/include/about.php"); ?>
+      <h2><?php the_field('about_title');?></h2>
+      <p><?php the_field('first_paragraph_about');?></p>
+      <p><?php the_field('second_paragraph_about');?></p>
+      <p><?php the_field('third_paragraph_about');?></p>
       <a href="/contato" class="btn">Vamos conversar!</a>
     </div>
   </div>
@@ -27,16 +30,10 @@
 <section class="focus bg-wavy js-scroll active-scroll">
   <div class="container">
     <div class="content-left flex-item js-scroll">
-      <h2><?php the_field('titulo-foco')?></h2>
-        <p>
-          <?php the_field('primeiro-paragrafo-foco');?>
-        </p>
-        <p>
-          <?php the_field('segundo-paragrafo-foco');?>
-        </p>
-        <p>
-          <?php the_field('terceiro-paragrafo-foco');?>
-        </p>
+      <h2><?php the_field('focus_title')?></h2>
+      <p><?php the_field('first_paragraph_focus');?></p>
+      <p><?php the_field('second_paragraph_focus');?></p>
+      <p><?php the_field('third_paragraph_focus');?></p>
       <a href="/especialidade" class="btn">Conhecer mais</a>
     </div>
 
@@ -75,7 +72,8 @@
         </a>
         <small>Novembro de 2019</small>
         <p class="publication-description">
-        Este trabalho pretende apresentar um instrumento de avaliação e intervenção em psicologia, aplicado à infância e que é utilizado de forma lúdica no setting psicoterapêutico. O “Mundo em Rede”, nome dado ao instrumento, se propõe facilitar a construção e visualização da rede social da criança, considerando seu impacto na saúde emocional infantil.             </p>
+          Este trabalho pretende apresentar um instrumento de avaliação e intervenção em psicologia, aplicado à infância e que é utilizado de forma lúdica no setting psicoterapêutico. O “Mundo em Rede”, nome dado ao instrumento, se propõe facilitar a construção e visualização da rede social da criança, considerando seu impacto na saúde emocional infantil.
+        </p>
       </div>
     </div>
     <hr />

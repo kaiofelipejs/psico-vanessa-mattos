@@ -13,16 +13,7 @@
       </div>
 
       <div class="content-right flex-item container js-scroll">
-        <h2><?php the_field('titulo-especialidade');?></h2>
-        <p>
-          <?php the_field('first-paragrafo-especialidade');?>
-        </p>
-        <p>
-          <?php the_field('segundo-paragrafo-especialidade');?>
-        </p>
-        <p>
-          <?php the_field('terceiro-paragrafo-especialidade');?>
-        </p>
+        <?php include(TEMPLATEPATH . "/include/speciality.php"); ?>
       </div>
     </div>
   </main>
@@ -32,33 +23,33 @@
   </svg>
 
   <section class="assumption bg-wavy js-scroll active-scroll">
-    <h2 class="js-scroll"><?php the_field('titulo-secao-bloco') ?></h2>
+    <h2 class="js-scroll"><?php the_field('section_assumption_title') ?></h2>
     <div class="container">
       <div class="flex-item assumption-item js-scroll">
-        <img src="<?php the_field('primeiro-icone-bloco') ?>" alt="Icone do primeiro tópico" />
-        <h3><?php the_field('primeiro-titulo-bloco') ?></h3>
-        <p>
-          <?php the_field('primeiro-descricao-bloco') ?>
-        </p>
+        <img 
+          src="<?php the_field('first_assumption_item') ?>" 
+          alt="Icone do primeiro tópico"
+        />
+        <h3><?php the_field('first_assumption_title') ?></h3>
+        <p><?php the_field('first_assumption_description') ?></p>
       </div>
 
       <div class="flex-item assumption-item js-scroll">
-        <img src="<?php the_field('segundo-icone-bloco') ?>" alt="Icone do segundo tópico" />
-        <h3><?php the_field('segundo-titulo-bloco') ?></h3>
-        <p>
-          <?php the_field('segundo-descricao-bloco') ?>
-        </p>
+        <img 
+          src="<?php the_field('second_assumption_item') ?>" 
+          alt="Icone do segundo tópico" 
+        />
+        <h3><?php the_field('second_assumption_title') ?></h3>
+        <p><?php the_field('second_assumption_description') ?></p>
       </div>
 
       <div class="flex-item assumption-item js-scroll">
         <img
-          src="<?php the_field('terceiro-icone-bloco') ?>"
+          src="<?php the_field('third_assumption_item') ?>"
           alt="Icone do terceiro tópico"
         />
-        <h3><?php the_field('terceiro-titulo-bloco') ?></h3>
-        <p>
-          <?php the_field('terceiro-descricao-bloco') ?>
-        </p>
+        <h3><?php the_field('third_assumption_title') ?></h3>
+        <p><?php the_field('third_assumption_description') ?></p>
       </div>
     </div>
   </section>
@@ -69,7 +60,7 @@
 
   <section class="practice container js-scroll">
     <div class="content-left flex-item">
-    <?php include(TEMPLATEPATH . "/include/practice.php"); ?>
+      <?php include(TEMPLATEPATH . "/include/practice.php"); ?>
       <a href="/contato" class="btn">Vamos conversar!</a>
     </div>
 
