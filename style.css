@@ -556,10 +556,11 @@ a[href='/blog'].btn {
 
 .icons a {
   margin: 0 15px 15px 15px;
+  max-width: 35px;
 }
 
 .icons a:hover {
-  filter: drop-shadow(-1px -1px);
+  filter: brightness(0.8);
 }
 
 @media (max-width: 739px) {
@@ -878,6 +879,18 @@ a[href='/blog'].btn {
 
 .contact-social h3 {
   margin-top: 20px;
+}
+
+.contact-social .icons a:first-child {
+  margin-left: 0;
+}
+
+.contact-social .icons a {
+  filter: brightness(0.1);
+}
+
+.contact-social .icons a:hover {
+  filter: brightness(0.3);
 }
 
 /* PÁGINA ESPECIALIDADE */

@@ -55,14 +55,7 @@
 
       <div class="contact-social">
         <h3>Redes Sociais</h3>
-        <div class="icons">
-          <a href="https://www.facebook.com/psicovanessam/" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook_black.png" alt="Facebook" />
-          </a>
-          <a href="https://www.instagram.com/psicovanessam/" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram_black.png" alt="Instagram" />
-          </a>
-        </div>
+        <?php include(TEMPLATEPATH . "/include/icons.php"); ?>
       </div>
     </div>
   </div>

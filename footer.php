@@ -68,24 +68,7 @@
       <div class="social align-center">
         <h3>Redes Sociais</h3>
 
-        <div class="icons">
-          <a
-            href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_number_formatted ?>&text=Ol%C3%A1!%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%2C%20podemos%20conversar%3F%20"
-            target="_blank"
-            class="whatsapp"
-            rel="noopener noreferrer"
-          >
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp_icon.png" alt="Whatsapp" />
-          </a>
-
-          <a href="https://www.facebook.com/psicovanessam/" target="_blank" class="facebook" rel="noopener noreferrer">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.png" alt="Facebook" />
-          </a>
-
-          <a href="https://www.instagram.com/psicovanessam/" target="_blank" class="instagram" rel="noopener noreferrer">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.png" alt="Instagram" />
-          </a>
-        </div>
+        <?php include(TEMPLATEPATH . "/include/icons.php"); ?>
       </div>
     </div>
   </footer>
