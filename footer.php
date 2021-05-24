@@ -14,29 +14,19 @@
 </section>
 <?php } ?>
 
-	<!-- Begin Mailchimp Signup Form -->
-	<div id="mc_embed_signup" >
-    <div class="assine container">
-    <div class="assine-info flex-item">
-      <h2><?php the_field('title_newsletter', $home); ?></h2>
-      <p><?php the_field('subtitle_newsletter', $home)?></p>
-    </div>
+  <section class="assine">
+    <div class="container">
+      <div class="assine-info flex-item">
+        <h2><?php the_field('title_newsletter', $home); ?></h2>
+        <p><?php the_field('subtitle_newsletter', $home)?></p>
+      </div>
 
-    <form
-      action="https://vanessamattos.us4.list-manage.com/subscribe/post?u=c749aca32f972b8bd2c72670c&amp;id=6a10d406fa"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      class="validate flex-item"
-      target="_blank"
-      novalidate
-    >
-      <input type="email" value="" name="EMAIL" class="email-form" id="mce-EMAIL" placeholder="E-mail" required>
-      <input type="submit" class="btn-submit-form" value="Inscrever!" name="subscribe" id="mc-embedded-subscribe">
-    </form>
+      <form onsubmit="return alert('Obrigada! Espero que aproveite :)')">
+        <input type="email" value="" name="EMAIL" class="email-form" placeholder="E-mail" required>
+        <input type="submit" class="btn-submit-form" value="Inscrever!" name="subscribe">
+      </form>
     </div>
-	</div>
-	<!--End mc_embed_signup-->
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -114,6 +104,6 @@
    </section>
 
    <?php wp_footer(); ?>
-
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/691418e0-3edb-4e44-ae1b-4bd602bc9fc3-loader.js" ></script>
   </body>
 </html>

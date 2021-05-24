@@ -913,19 +913,23 @@ a[href='/blog'].btn {
 }
 
 /* ASSINE */
-/* EMBEDDED FORM MAIL CHIMP */
-#mc_embed_signup {
+.assine {
   background: #3f6c75;
   padding: 30px 0;
 }
 
 .assine form {
   display: flex;
-  justify-content: flex-end;
+  padding: 10px 0;
+  flex-grow: 0.1;
 }
 
 .assine-info {
   color: #f8f7f2;
+}
+
+.assine-info h2 {
+  margin-bottom: 6px;
 }
 
 .email-form {
@@ -934,7 +938,6 @@ a[href='/blog'].btn {
   border-radius: 12px;
   background: #f8f7f2;
   font-size: 18px;
-  font-style: italic;
   margin-right: 10px;
   width: 100%;
 }
