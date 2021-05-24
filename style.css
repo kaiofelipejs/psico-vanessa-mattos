@@ -177,7 +177,7 @@ section.container,
 }
 
 .btn::after {
-  content: "↣";
+  content: '↣';
   display: inline-block;
   margin-left: -20px;
   line-height: 1;
@@ -195,7 +195,7 @@ section.container,
   margin-left: 12px;
 }
 
-a[href="/blog"].btn {
+a[href='/blog'].btn {
   margin-bottom: 60px;
 }
 
@@ -317,7 +317,7 @@ a[href="/blog"].btn {
   right: 0;
   margin: auto;
   width: 0%;
-  content: ".";
+  content: '.';
   color: transparent;
   background: #cbac95;
   height: 1px;
@@ -341,12 +341,12 @@ a[href="/blog"].btn {
 }
 
 /* MENU MOBILE */
-[data-menu="button"] {
+[data-menu='button'] {
   display: none;
 }
 
 @media (max-width: 739px) {
-  [data-menu="button"] {
+  [data-menu='button'] {
     display: flex;
     align-items: center;
     background: #cbac95;
@@ -360,8 +360,8 @@ a[href="/blog"].btn {
     outline: 0;
   }
 
-  [data-menu="button"]::before {
-    content: "";
+  [data-menu='button']::before {
+    content: '';
     display: inline-block;
     height: 2px;
     width: 100%;
@@ -370,11 +370,11 @@ a[href="/blog"].btn {
     transition: transform 0.3s;
   }
 
-  [data-menu="button"].active::before {
+  [data-menu='button'].active::before {
     transform: rotate(90deg);
   }
 
-  #menu-menu-principal {
+  #menu-menu {
     display: none;
     flex-wrap: wrap;
     position: absolute;
@@ -400,7 +400,7 @@ a[href="/blog"].btn {
     color: white;
   }
 
-  #menu-menu-principal.active {
+  #menu-menu.active {
     display: block;
     animation: show-down 0.3s forwards;
   }
@@ -744,7 +744,7 @@ a[href="/blog"].btn {
 }
 
 .blog-button-next a::after {
-  content: " ↣";
+  content: ' ↣';
   transition: 0.3s;
 }
 
@@ -754,7 +754,7 @@ a[href="/blog"].btn {
 }
 
 .blog-button-prev a::before {
-  content: "↢ ";
+  content: '↢ ';
   transition: 0.3s;
 }
 
@@ -763,7 +763,7 @@ a[href="/blog"].btn {
   transition: 0.3s;
 }
 
-.blog-button-prev a[href="/blog"] {
+.blog-button-prev a[href='/blog'] {
   margin-top: 20px;
   display: block;
 }
