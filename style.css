@@ -176,7 +176,7 @@ section.container,
   margin: 0 auto;
 }
 
-.btn::after {
+.btn:not(li a)::after {
   content: '↣';
   display: inline-block;
   margin-left: -20px;
@@ -185,7 +185,7 @@ section.container,
   transition: 0.3s all ease-in-out;
 }
 
-.btn:hover {
+.btn:not(li a):hover {
   padding-right: 34px;
   padding-left: 34px;
 }
@@ -296,7 +296,7 @@ a[href='/blog'].btn {
 }
 
 .menu-nav ul {
-  justify-content: flex-end;
+  align-items: center;
   display: flex;
   list-style: none;
 }
@@ -310,7 +310,7 @@ a[href='/blog'].btn {
   width: 50%;
 }
 
-.menu-nav ul li a:after {
+.menu-nav ul li a:not(.btn)::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -323,19 +323,19 @@ a[href='/blog'].btn {
   height: 1px;
 }
 
-.menu-nav ul li a::after,
-.menu-nav ul li a::before {
+.menu-nav ul li a:not(.btn)::after,
+.menu-nav ul li a:not(.btn)::before {
   transition: all 0.5s;
 }
 
-.menu-nav ul li a:hover:after {
+.menu-nav ul li a:not(.btn):hover::after {
   width: 100%;
 }
 
 @media (max-width: 739px) {
-  .menu-nav ul li a::after,
-  .menu-nav ul li a::before,
-  .menu-nav ul li a:hover:after {
+  .menu-nav ul li a:not(.btn)::after,
+  .menu-nav ul li a:not(.btn)::before,
+  .menu-nav ul li a:hover::after {
     display: none;
   }
 }
@@ -374,13 +374,13 @@ a[href='/blog'].btn {
     transform: rotate(90deg);
   }
 
-  #menu-menu {
+  #menu {
     display: none;
     flex-wrap: wrap;
     position: absolute;
     background: #cbac95;
     z-index: 200;
-    padding: 10px 0 10px 0;
+    padding: 10px;
     margin-top: 50px;
     box-shadow: 0px 8px 20px 0px rgba(102, 91, 83, 0.7);
     border-radius: 5px;
@@ -391,7 +391,6 @@ a[href='/blog'].btn {
   }
 
   .menu-nav ul li a {
-    padding: 10px 20px 10px 20px;
     text-transform: none;
     display: block;
   }
@@ -400,7 +399,7 @@ a[href='/blog'].btn {
     color: white;
   }
 
-  #menu-menu.active {
+  #menu.active {
     display: block;
     animation: show-down 0.3s forwards;
   }

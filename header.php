@@ -64,14 +64,19 @@
 
       <nav class="menu-nav">
         <button data-menu="button" aria-expanded="false" aria-label="Abrir menu"></button>
-          <?php
-            $args = array(
-              'menu' => 'principal',
-              'theme-location' => 'menu-principal',
-              'container' => false
-            );
-            wp_nav_menu($args);
-          ?>
+        <ul data-menu="list" id="menu">
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/especialidade/">Especialidade</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+          <li>
+            <button>
+              <a class="btn" href="<?php the_field('link_psi_autentica', $home) ?>">
+                Psi Autêntica
+              </a>
+            </button>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
