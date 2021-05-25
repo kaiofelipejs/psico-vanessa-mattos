@@ -52,7 +52,6 @@
     <?php wp_head(); ?>
     <!-- Fim WP Header -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/icons/favicon.ico" />
-    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
