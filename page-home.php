@@ -3,7 +3,7 @@
   get_header();
   $blog = get_page_by_title('blog');
   $about = get_page_by_title('sobre');
-  $speciality = get_page_by_title('especialidade');
+  $speciality = get_page_by_title('psicoterapia');
 ?>
 
 <main class="intro js-scroll">
@@ -53,7 +53,7 @@
 <section class="psico container js-scroll">
   <div class="content-left flex-item container">
     <?php include(TEMPLATEPATH . "/include/practice.php"); ?>
-    <a href="/especialidade" class="btn">Saiba mais</a>
+    <a href="/psicoterapia" class="btn">Saiba mais</a>
   </div>
 
   <div class="flex-item align-center">

@@ -1,4 +1,4 @@
-<?php $speciality = get_page_by_title('especialidade'); ?>
+<?php $speciality = get_page_by_title('psicoterapia'); ?>
 
 <h2><?php the_field('title_practice', $speciality);?></h2>
 <p><?php the_field('first_paragraph_practice', $speciality);?></p>

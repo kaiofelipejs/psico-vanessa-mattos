@@ -65,13 +65,18 @@
         <button data-menu="button" aria-expanded="false" aria-label="Abrir menu"></button>
         <ul data-menu="list" id="menu">
           <li><a href="/sobre/">Sobre</a></li>
-          <li><a href="/especialidade/">Especialidade</a></li>
+          <li><a href="/psicoterapia/">Psicoterapia</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/contato/">Contato</a></li>
           <li>
             <button>
-              <a class="btn" href="<?php the_field('link_psi_autentica', $home) ?>">
-                Psi Autêntica
+              <a 
+                class="btn" 
+                href="<?php the_field('link_cta', $home) ?>"
+                target= "_blank" 
+                rel="noreferrer noopener"
+              >
+                <?php the_field('name_cta', $home) ?>
               </a>
             </button>
           </li>

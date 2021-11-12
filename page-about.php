@@ -34,7 +34,7 @@
       <p><?php the_field('first_paragraph_focus');?></p>
       <p><?php the_field('second_paragraph_focus');?></p>
       <p><?php the_field('third_paragraph_focus');?></p>
-      <a href="/especialidade" class="btn">Conhecer mais</a>
+      <a href="/psicoterapia" class="btn">Conhecer mais</a>
     </div>
 
     <div class="flex-item align-center js-scroll">
